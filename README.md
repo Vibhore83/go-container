@@ -1,6 +1,6 @@
-# Go API Server for Infra Provisioner
-
-Infra Provisioner brings up a test bed by spawning a set of services requested by the test client.
+# go-container - Go API Server for Infra Provisioner
+  
+A rest interface written in Go to build containers based on an input. Infra Provisioner brings up a test bed by spawning a set of services requested by the test client.
 
 ## Overview
 - API version: 1.0.0
@@ -14,6 +14,35 @@ Provides following functionalities as of now:
     - Stop running container
     - Kill running container
     - Delete Mongo record
+
+###
+Packages required
+```
+ - context
+ - encoding/json
+ - fmt
+ - github.com/docker/docker/api/types
+ - github.com/docker/docker/api/types/container
+ - github.com/docker/docker/client
+ - github.com/docker/go-connections/nat
+ - github.com/gorilla/mux
+ - go.mongodb.org/mongo-driver/bson
+ - go.mongodb.org/mongo-driver/mongo
+ - go.mongodb.org/mongo-driver/mongo/options
+ - github.com/google/uuid
+ - log
+ - io
+ - io/ioutil
+ - regexp
+ - math/rand
+ - net
+ - net/http
+ - os
+ - strconv
+ - strings
+ - sync
+ - time
+```
 
 ### Running the server
 To run the server, follow these simple steps:
